@@ -1,0 +1,89 @@
+.flex-container {
+    display: flex;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    height: 64px;
+}
+
+#logo {
+    
+}
+
+header p {
+    display: inline;
+}
+
+header .big {
+    font-weight: bold;
+}
+
+nav {
+    position: absolute;
+    right: 24px;
+}
+
+nav li {
+    display: inline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: lightgray;
+}
+
+.banner img {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.banner .text .button {
+    background-color: grey;
+    padding: 8px 20px;
+    text-align: center;
+    color: white;
+}
+
+.info {
+    background-color: white;
+}
+
+.info .quote {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.info .quote img {
+    width: 100%;
+}
+
+.info .slides {
+    width: 40%;
+    margin: 32px 24px;
+    border-left: solid lightgray 1px;
+}
+
+.slide {
+    width: 100%;
+    margin: 16px;
+    display: inline-flex;
+}
+
+.slide img {
+    width: 35%;
+    height: auto;
+}
+
+.slide .text {
+    width: 65%;
+}
+
+.readmore {
+    color: blue;
+}
