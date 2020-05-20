@@ -1,3 +1,19 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 .flex-container {
     display: flex;
 }
@@ -6,10 +22,15 @@ header {
     display: flex;
     background-color: white;
     height: 64px;
+    width: 100%;
 }
 
 #logo {
-    
+    font-size: 32px;
+}
+
+#logo img {
+    vertical-align: middle;
 }
 
 header p {
@@ -21,26 +42,49 @@ header .big {
 }
 
 nav {
-    position: absolute;
-    right: 24px;
+    vertical-align: middle;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 nav li {
     display: inline;
+    padding-left: 16px;
+    transition: box-shadow 0.5s ease 0.1s;
+}
+
+nav li:hover {
+    box-shadow: 5px 5px lightseagreen;
 }
 
 body {
     margin: 0;
     padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-width: 1200px;
 }
 
 .banner {
-    background-color: lightgray;
+    background-color: #EBECF0;
 }
 
 .banner img {
     width: 60%;
+    height: auto;
     margin: 32px 24px;
+}
+
+.banner .text {
+    width: 300px;
+}
+
+.banner .text .button a {
+    text-decoration: none;
+    color: white;
 }
 
 .banner .text .button {
@@ -48,6 +92,12 @@ body {
     padding: 8px 20px;
     text-align: center;
     color: white;
+    transition: background-color 0.5s ease 0.1s;
+}
+
+.banner .text .button:hover {
+    background-color: lightseagreen;
+    left: -72%;
 }
 
 .info {
@@ -63,27 +113,133 @@ body {
     width: 100%;
 }
 
+.info .quote h2 {
+    margin-top: 32px;
+}
+
+.info .quote p {
+    margin-top: 24px;
+}
+
+.info .quote .credit {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
 .info .slides {
     width: 40%;
-    margin: 32px 24px;
-    border-left: solid lightgray 1px;
+
+    border-left: solid #EBECF0 1px;
 }
 
 .slide {
-    width: 100%;
-    margin: 16px;
+    width: 97%;
     display: inline-flex;
+    margin-left: 16px;
+    margin-top: 32px;
+    transition: background-color 0.5s ease 0.1s,
+                box-shadow 0.5s ease 0.1s;
 }
 
 .slide img {
     width: 35%;
-    height: auto;
+    margin-right: 16px;
 }
 
 .slide .text {
     width: 65%;
+    left: 20px;
+}
+
+.slide:hover {
+    background-color: #EBECF0;
+    box-shadow: 5px 5px lightseagreen;
 }
 
 .readmore {
     color: blue;
+}
+
+.start {
+    background-color: #EBECF0;
+}
+
+.start h2 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.start .panels {
+    margin: 32px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.start .panel {
+    background-color: white;
+    width: 250px;
+    margin: 16px;
+    transition: background-color 0.5s ease 0.1s,
+                box-shadow 0.5s ease 0.1s;
+}
+
+.start .panel:hover {
+    background-color: #EBECF0;
+    box-shadow: 5px 5px lightseagreen;
+}
+
+.start .panel img {
+    width: 100%;
+}
+
+.start .panel .text {
+   padding-left: 16px;
+}
+
+.thesis h2 {
+    text-align: center;
+}
+
+.thesis {
+    margin: 0 24px;
+}
+
+.thesis .video {
+    width: 60%;
+}
+
+.thesis .video video {
+    width: 100%;
+}
+
+.thesis .slides {
+    width: 39%;
+}
+
+.thesis .slide {
+    padding: 16px;
+}
+
+footer {
+    border-top: solid 1px #EBECF0;
+}
+
+footer ul {
+    text-align: right;
+}
+
+footer li {
+    display: inline;
+    color: gray;
+    padding-right: 16px;
+}
+
+footer .copyright {
+    float: left;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+    
 }
